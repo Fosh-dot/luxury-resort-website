@@ -1,0 +1,173 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 22px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  z-index: 1000;
+
+  box-sizing: border-box;
+
+  transition: 0.4s ease;
+}
+
+.navbar.scrolled {
+  background: white;
+
+  padding: 16px 40px;
+
+  backdrop-filter: blur(14px);
+}
+
+.logo {
+  font-size: 28px;
+
+  letter-spacing: 4px;
+
+  color: burlywood;
+
+  z-index: 1001;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+
+  color: burlywood;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  transition: 0.4s ease;
+}
+
+.nav-links li a:hover {
+  color: #d6c3a5;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.book-btn-nav {
+  padding: 13px 24px;
+
+  background: #d6c3a5;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  transition: 0.4s ease;
+}
+
+.book-btn-nav:hover {
+  background: white;
+
+  transform: translateY(-2px);
+}
+
+.hamburger {
+  display: none;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  cursor: pointer;
+
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 2px;
+
+  background: white;
+
+  transition: 0.4s ease;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 18px 25px;
+  }
+
+  .navbar.scrolled {
+    padding: 15px 25px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+
+    top: 0;
+    right: -100%;
+
+    width: 260px;
+    height: 100vh;
+
+    background: white;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-left: 40px;
+
+    transition: 0.5s ease;
+
+    gap: 35px;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  .book-btn-nav {
+    padding: 11px 18px;
+
+    font-size: 11px;
+  }
+}

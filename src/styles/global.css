@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: white;
+  color: #1f1f1f;
+  padding-top: 90px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  transition: 0.4s ease;
+}
+button:hover {
+  transform: translateY(-2px);
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+p {
+  line-height: 1.8;
+  font-size: 15px;
+}
+.luxury-card {
+  overflow: hidden;
+
+  background: white;
+
+  transition: 0.5s ease;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.luxury-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+a,
+button,
+img,
+.luxury-card {
+  transition: all 0.4s ease;
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
