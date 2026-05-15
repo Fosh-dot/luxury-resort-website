@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
-import Discover from "../components/Discover";
-import Footer from "../components/Footer";
+import Navbar from "../components/Navbar.jsx";
+import Discover from "../components/Discover.jsx";
+import Footer from "../components/Footer.jsx";
 
 function DiscoverPage() {
   return (
